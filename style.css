@@ -1,4 +1,4 @@
-/* Main Settings */
+/* Root Settings */
 * {
     font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -15,7 +15,7 @@ body {
     grid-template: auto 4fr / 1fr 4fr;
 }
 
-/* End of Main Settings */
+/* End of Root Settings */
 
 /* Header Section */
 .header-section {
@@ -90,7 +90,7 @@ body {
     background-color: #38bdf8;
 }
 
-.welcome-section .greeting {
+.welcome-section .user-greeting {
     margin: 0;
     padding: 0;
     font-weight: bold;
@@ -178,8 +178,10 @@ body {
     font-size: 1.3rem;
 }
 
-
-
-
-
 /* End of Sidebar Section */
+
+/* Main Section */
+
+
+
+/* End of Main Section */
