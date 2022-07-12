@@ -182,6 +182,139 @@ body {
 
 /* Main Section */
 
+/* Project Section */
+.main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    box-shadow: inset 0 5px 5px rgb(173, 173, 173);
+}
+
+.main-content .projects {
+    display: grid;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 2rem 1rem;
+}
+
+.main-content .projects>h3 {
+    font-size: 1.3rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    grid-column: 1 / -1;
+}
+
+.main-content .projects .project {
+    border-radius: 13px;
+    background-color: wheat;
+    display: grid;
+    grid-template: 4fr auto / 1rem 1fr;
+    box-shadow: .2rem .2rem .4rem rgb(146, 146, 146);
+}
+
+.main-content .projects .project .text-block {
+    padding: 1rem 1rem 0;
+}
+
+.text-block .project-name {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.projects .project .color-black {
+    grid-row: 1/-1;
+    background: linear-gradient(#009fff, #ec2f4b);
+    border-radius: 20px 0 0 20px;
+    width: 75%;
+}
+
+.projects img {
+    cursor: pointer;
+    height: 2rem;
+}
+
+.projects .action-block {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* End of Project Section */
+/* Announcement and Trending Section */
+
+.announ-trending {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
 
 
+.announ-trending>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.announ-trending>div h5 {
+    font-size: 1.4rem;
+    margin: 0;
+    margin-bottom: 0.5;
+}
+
+.announ-content,
+.trending-content {
+    background-color: wheat;
+    display: flex;
+    border-radius: 20px;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+    box-shadow: .2rem .2rem .4rem rgb(146, 146, 146);
+
+}
+
+.announ-trending img {
+    height: 2rem;
+}
+
+.main-content .announ-trending .announcement h5 {
+    font-size: 0.9rem;
+}
+
+.main-content .announ-trending .announcement h5,
+.main-content .announ-trending .announcement p {
+    margin: 0;
+}
+
+.main-content .announ-trending .announcement p {
+    opacity: 0.7;
+}
+
+.main-content .announ-trending .announcement-border {
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+}
+
+.main-content .announ-trending .trend {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.trendimg {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    background-color: grey;
+}
+
+.trendtext {
+    opacity: 0.7;
+}
+
+/* End of Announcement and Trending Section */
 /* End of Main Section */
